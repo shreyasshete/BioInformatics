@@ -1,0 +1,30 @@
+Below are the list of references we used for this project.
+
+1. https://github.com/scverse/scanpy-tutorials/issues/28
+2. https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3109048
+3. https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE49712
+4. https://scanpy.readthedocs.io/en/stable/generated/scanpy.pp.calculate_qc_metrics.html
+5. https://github.com/scverse/scanpy/issues/978
+6. https://github.com/scverse/scanpy/issues/1147
+7. https://www.oreilly.com/library/view/python-data-science/9781491912126/ch04.html
+8. https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+9. https://chanzuckerberg.github.io/scRNA-python-workshop/preprocessing/01-basic-qc.html
+10. https://github.com/AmoDinho/datacamp-python-data-science-track/blob/master/Machine%20Learning%20with%20Experts-School%20Budgets/Chapter%201%20-%20Exploring%20the%20raw%20data.py
+11. https://scanpy.readthedocs.io/en/stable/generated/scanpy.pp.filter_cells.html
+12. https://scanpy.readthedocs.io/en/stable/generated/scanpy.pl.pca.html
+13. https://github.com/scverse/scanpy/issues/324
+14. https://nbisweden.github.io/workshop-scRNAseq/labs/compiled/scanpy/scanpy_04_clustering.html
+15. https://scanpy.readthedocs.io/en/stable/generated/scanpy.pp.normalize_per_cell.html
+16. https://scanpy.readthedocs.io/en/stable/generated/scanpy.pp.normalize_total.html
+17. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4404308/
+18. https://github.com/scverse/scanpy/blob/master/scanpy/plotting/_tools/__init__.py
+19. https://scanpy.readthedocs.io/en/stable/generated/scanpy.tl.umap.html
+20. https://scanpy.readthedocs.io/en/stable/generated/scanpy.pp.neighbors.html
+21. https://github.com/scverse/scanpy/blob/master/scanpy/tools/_umap.py
+22. https://github.com/theislab/scvelo/issues/37
+23. https://towardsdatascience.com/umap-and-k-means-to-classify-characters-league-of-legends-668a788cb3c1
+24. https://umap-learn.readthedocs.io/en/latest/clustering.html
+25. https://scanpy.readthedocs.io/en/stable/generated/scanpy.pp.log1p.html
+
+Also we have taken help from Dr. Steven Fernandes who is post doctoral research at University of Central Florida
+
