@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{minted}
+\usepackage{hyperref}
+
+\title{CSE 5370: Bioinformatics \\ Homework 1 Answers}
+\author{Kushaal Kashyap Narasimhan , Aravind Ravi Kiran Kashyap\\  Shreyas Jagadeep Shete , Nischitha Sadananda}
+\begin{document}
+\maketitle
+\def\mca#1{\multicolumn{1}{c}{#1}}
+\def\mcb#1{\multicolumn{1}{c|}{#1}}
+\renewcommand{\arraystretch}{2.25}
+\section{Genetics Questions}
+\subsection{Mendelian Genetics}
+\begin{tabular}{c|c|c|c|c|}
+  \mca{}  & \mca{RY} & \mca{Ry}& \mca{rY} &\mca{ry} \\\cline{2-5}
+  \mcb{ry}   & RrYy  & Rryy   & rrYy  & rryy \\\cline{2-5}
+  \mcb{ry}   & RrYy  & Rryy   & rrYy  & rryy   \\\cline{2-5}
+  \mcb{ry}   & RrYy  & Rryy   & rrYy  & rryy  \\\cline{2-5}
+  \mcb{ry}   & RrYy  & Rryy   & rrYy  & rryy   \\\cline{2-5}
+\end{tabular}
+
+\begin{itemize}
+    
+    \item What fraction of peas from this cross will be round yellow (phenotype)? 
+	\textbf{Answer}: 4 $/$ 16
+    \item What fraction of peas from this cross will be round green (phenotype)?
+	\textbf{Answer}: 4 $/$  16
+    \item What fraction of peas from this cross will be wrinkled yellow (phenotype)?
+	\textbf{Answer}: 4 $/$  16
+    \item What fraction of peas from this cross will be wrinkled green (phenotype)?
+	\textbf{Answer}: 4 $/$ 16
+\end{itemize}
+
+\subsection{Genome Wide Association Studies (GWAS)}
+\begin{itemize}
+    \item Genome-wide association studies (GWAS) look for associations between single nucleotide polymorphisms (SNPs) and
+phenotypes across many subjects. Suppose we test 2.6 million SNPs for association with a phenotype,
+such as height. Assuming each association between a SNP and the height phenotype is an
+independent hypothesis, and we want our effective p-value to be .05. What is our Bonferroni-corrected
+p-value? [4 points] \\
+\textbf{Answer}: : Bonferroni corrected p values = $\alpha$ $\div$  n\ \\
+\textbf 0.05 $\div$ 2.6 million \\
+\textbf {1.92307692e $\times$ 10 $\wedge$ -8}
+\item If we were to perform a GWAS with the same number of SNPs but instead look for correlation
+with 1000 metabolites, what would be our new Bonferroni-corrected p-value? [4 points]\\
+\textbf{Answer}: 0.05 $\div$ 1000 \\
+\textbf {0.00005} \\
+
+\item Bonferroni correction is noted to be conservative. What does it mean in terms of type I and
+type II errors? [3 points] \\
+
+\textbf{Answer}:Bonferroni correction is used to reduce type 1 error but it will become vulnerable to type 2
+ error as it fails to reject the null hypothesis when it is supposed to be done , hence it is
+ noted to be conservative.\\
+
+\end{itemize}
+
+\section{Statistics Questions [30 points total]}
+\subsection {Drug Approval}
+\begin{itemize}
+    \item State the null and alternative hypotheses. [8 points]\\
+	\textbf{Answer}: {Null Hypothesis} : The drug lowers the blood pressure of the patients \\
+	 Ho = $\mu$ = $\mu$$\circ$ = 115\\
+	  
+\textbf{Answer}: {Alternative Hypothesis} : The drug does not lower the blood pressure of the patients \\	                  Ho = $\mu$ $\neq$ $\mu$$\circ$ $\neq$ 115\\
+
+    \item What type of test is appropriate to test statistical significance? What is the p-value resulting from this test? [8 points] \\
+    \textbf{Answer}: Sample Size n = 20 which is less than 30 and standard deviation us given ,it is going to be Z test that us appropriate to test statistical significance.
+    
+  \[ 
+Z = G \left( \frac{\overline{X} - \mu\circ}{\frac{ \sigma} {n}} \right)
+\]
+
+    $\overline{X}$ = 115 \\
+    $\mu$ $\circ$ =120\\
+    n  =  20 \\
+    $\sigma$ = 15\\
+    \textbf substituting the values we get
+    
+    Z = -1.49 , |Z| = 1.49
+    using the online calculator we get P value = 0.06
+    We can approve the drug as 0.06 is greater than 0.05
+
+    
+    \item What conclusions can be drawn from this p-value at a significance threshold of 0.05?  Should this drug be put on the market?  What factors about the experimental design would you consider in making this decision?  (No need to do additional calculations) [9 points]\\
+    \textbf{Answer}: Yes , this drug can be put on the market .
+    
+    The sample of 20 mice taken for experiment will have similar result in the population and that in human beings is a factor considered in making the decision.
+\end{itemize}
+
+\subsection{Other Questions}
+\begin{itemize}
+    \item What is the advantage of a non-parametric test vs a parametric test? [3 points] \\
+	\textbf{Answer} The advantages of non-parametric test are it can be used on small sample size , they make fewer assumptions about the data and they are useful in analyzing data that are inherently in ranks or categories.\\
+	
+	\item If a non-parametric test makes fewer assumptions, why should we ever use a parametric test? [2 points] 
+	
+	\textbf{Answer} We should use parametric test as it highlights better variance in the distribution between two arms but non parametric test makes fewer assumptions.
+\end{itemize}
+
+\section{Difficulty Adjustment}
+Your answers to this section will be used to adjust the difficulty of future assignments in the class. 
+\begin{itemize}
+    \item How long did this assignment take you to complete?\\
+	\textbf{Answer}: This assignment took me more than a day to complete.For the Questions other than the programming I had to go through the lecture video again to solve
+and google to understand the basics which took me roughly 3 hrs . For the programming assignment it took me a days work as i have been using windows and no access to mac. I had to try different ways to install and due to limited lecture in proceeding with colab.
+    \item If the assignment took you longer than the designed 3 hours, which parts were overly difficult?\\
+    \textbf{Answer}:Setting up of the environment could have been explained in detail during face to face class and took more than day to get everything setup.
+\end{itemize}
+
+
+\end{document}
+
